@@ -1,0 +1,14 @@
+{
+  "name": "wasm-tools",
+  "version": "0.1.0",
+  "files": [
+    "wasm_tools_bg.wasm",
+    "wasm_tools.js",
+    "wasm_tools.d.ts"
+  ],
+  "module": "wasm_tools.js",
+  "types": "wasm_tools.d.ts",
+  "sideEffects": [
+    "./snippets/*"
+  ]
+}
