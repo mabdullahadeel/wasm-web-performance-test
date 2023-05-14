@@ -12,6 +12,10 @@ export function add(left: number, right: number): number;
 */
 export function greet(name: string): string;
 /**
+* @param {string} s
+*/
+export function alert_wasm(s: string): void;
+/**
 * @param {number} n
 * @returns {number}
 */
@@ -23,6 +27,7 @@ export interface InitOutput {
   readonly memory: WebAssembly.Memory;
   readonly add: (a: number, b: number) => number;
   readonly greet: (a: number, b: number, c: number) => void;
+  readonly alert_wasm: (a: number, b: number) => void;
   readonly fib: (a: number) => number;
   readonly __wbindgen_add_to_stack_pointer: (a: number) => number;
   readonly __wbindgen_malloc: (a: number) => number;

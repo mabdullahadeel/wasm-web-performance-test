@@ -1,9 +1,13 @@
-import init, { add, greet, fib } from './wasm-tools/pkg/wasm_tools.js';
+import init, { add, greet, fib, alert_wasm } from './wasm-tools/pkg/wasm_tools.js';
 
 const app = document.getElementById('app');
 const btn = document.getElementById('btn');
+const btnWasmAlert = document.getElementById('btn-wasm-alert');
 
 btn.addEventListener('click', handleTriggerFib);
+btnWasmAlert.addEventListener('click', () => {
+    alert_wasm('Hello from Wasm');
+});
 
 function updateContent(content) {
     const div = document.createElement('div');
